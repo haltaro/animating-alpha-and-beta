@@ -1,5 +1,5 @@
 # animating-alpha-and-beta
-Making animation of $\alpha$ and $\beta$ for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer the class.
+Making animation of $\alpha$ and $\beta$ for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer to the class.
 
 ![fig/ab.gif](fig/ab.gif)
 
@@ -19,7 +19,7 @@ You have to add *Histrical Data* such as [`GOOG.csv`]() to `/data` directry. For
 
 ## Udacity
 
-The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer the class (and take it!). You have to add `udacity.py` which defines `get_data()`, `fill_missing_values()`, and `compute_daily_returns()` to the current directry.
+The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer to the class (and take it!). You have to add `udacity.py` which defines `get_data()`, `fill_missing_values()`, and `compute_daily_returns()` to the current directry.
 
 # Model
 
