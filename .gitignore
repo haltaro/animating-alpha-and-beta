@@ -1,0 +1,6 @@
+/data
+udacity.*
+*~
+*.py.sw*
+get_csv.py
+*.gif
