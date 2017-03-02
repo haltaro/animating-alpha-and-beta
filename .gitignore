@@ -1,6 +1,5 @@
 /data
+/ignore
 udacity.*
 *~
 *.py.sw*
-get_csv.py
-*.gif
