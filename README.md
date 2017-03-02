@@ -1,5 +1,5 @@
 # animating-alpha-and-beta
-Making animation of *alpha* and *beta* for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer to the class.
+Making animation of *alpha* and *beta* for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. For the detail, please refer to the class.
 
 ![fig/ab.gif](fig/ab.gif)
 
@@ -15,7 +15,7 @@ You have to add *Histrical Data* such as [`GOOG.csv`]() to `/data` directry. For
 
 ## python
 * [pandas](http://pandas.pydata.org/) and [NumPy](http://www.numpy.org/) : For manipulating data. I used pandas 0.18.0 and NumPy 1.10.4
-* [matplotlib](http://matplotlib.org/) : For making animation
+* [matplotlib](http://matplotlib.org/) : For making animation. I used matplotlib 0.18.0.
 
 ## Udacity
 
