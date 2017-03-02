@@ -1,5 +1,5 @@
 # animating-alpha-and-beta
-Making animation of $\alpha$ and $\beta$ for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer to the class.
+Making animation of *alpha* and *beta* for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. Refer to the class.
 
 ![fig/ab.gif](fig/ab.gif)
 
@@ -25,9 +25,9 @@ The codes depend on functions defined in [Machine learning for trading](https://
 
 ![fig/model.png](fig/model.png)
 
-Hereinafter, we assume `SPY` as the benchmark. The figure shows daily-returns of `SPY` and `GOOG` from Dec. 1, 2006 to Dec. 1, 2016. The regression line can be defined as $y = \beta x + \alpha$. 
-* $\alpha$: Intercept of the line. It can be considered as the return over the benchmark.
-* $\beta$: Slope of the line. It can be considered as the relative volatility.
+Hereinafter, we assume `SPY` as the benchmark. The figure shows daily-returns of `SPY` and `GOOG` from Dec. 1, 2006 to Dec. 1, 2016. The regression line can be defined as y = beta x + alpha. 
+* alpha: Intercept of the line. It can be considered as the return over the benchmark.
+* beta: Slope of the line. It can be considered as the relative volatility.
 
 # How to use 
 
@@ -42,7 +42,7 @@ ab.animate_a_b()
 
 * `symbols`: List of symbols to animate  
 * `start_date` and `end_date`: Defines the animation period. Strings with `yyyy-mm-dd` format.
-* `period`: Calculation period of $\alpha$ and $\beta$. 
+* `period`: Calculation period of alpha and beta. 
 
 # License
 MIT
