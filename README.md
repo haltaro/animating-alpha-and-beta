@@ -1,5 +1,5 @@
 # animating-alpha-and-beta
-Making animation of *alpha* and *beta* for given symbols. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. For the detail, please refer to the class.
+Making animation of *alpha* and *beta* for given stocks. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. For the detail, please refer to the class.
 
 ![fig/ab.gif](fig/ab.gif)
 
