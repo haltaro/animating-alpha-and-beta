@@ -32,7 +32,7 @@ Hereinafter, we assume `SPY` as the benchmark. The figure shows daily-returns of
 # How to use 
 
 ```py
-import animab.py as ab
+import animab as ab
 
 ab.animate_a_b()
 
