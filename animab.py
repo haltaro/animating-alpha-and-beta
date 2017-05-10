@@ -35,7 +35,6 @@
 #  https://www.udacity.com/course/machine-learning-for-trading--ud501
 
 
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -94,6 +93,47 @@ def animate_a_b(
     fig = plt.figure(figsize=(8, 8))
     anim = ani.FuncAnimation(fig, animate_polyfit, frames=frames)
     anim.save("ab.gif", writer="imagemagick", fps=18)
+
+
+def save_a_b(
+        symbols=["AAPL", "GOOG", "MSFT", "BRK-A", "AMZN",
+                 "FB", "XOM", "JNJ", "JPM", "WFC"],
+        start_date="2006-12-01", end_date="2016-12-01",
+        period=252 * 2):
+
+    """ --- Preprocess: You have to take Udacity! --- """
+    # Read data
+    dates = pd.date_range(start_date, end_date)  # date range as index
+    stock_data = udacity.get_data(symbols, dates)  # get data for each symbol
+
+    # Fill missing values
+    udacity.fill_missing_values(stock_data)
+    # Daily returns
+    daily_returns = udacity.compute_daily_returns(stock_data)
+
+    """ --- Calculate spreadsheet of alpha and beta ---"""
+    sheet = pd.DataFrame(columns=["Symbol", "Date", "Alpha", "Beta", "Color",
+                                  "Size"])
+    interval = 10  # Nframe interval
+    frames = (len(stock_data) - period) / interval  # Num of frames
+
+    for nframe in range(frames):
+
+        daily_returns_p = daily_returns[
+            nframe * interval: nframe * interval + period]
+        corr = daily_returns_p.corr(method="pearson")
+
+        for n, symbol in enumerate(symbols[1:]):
+            beta, alpha = np.polyfit(daily_returns_p["SPY"],
+                                     daily_returns_p[symbol], 1)
+
+            new_row = pd.DataFrame(
+                [[symbol, daily_returns_p.index[-1].strftime("%Y/%m/%d"),
+                  alpha, beta, n, np.absolute(corr.ix[0, n + 1]) * 25]],
+                columns=sheet.columns)
+            sheet = sheet.append(new_row, ignore_index=True)
+
+    sheet.to_excel("ab.xlsx")
 
 
 if __name__ == "__main__":
