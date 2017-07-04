@@ -1,7 +1,4 @@
-# animating-alpha-and-beta
-Making animation of *alpha* and *beta* for given stocks. The codes depend on functions defined in [Machine learning for trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) at Udacity. For the detail, please refer to the class.
-
-![fig/ab.gif](fig/ab.gif)
+[Qiita記事](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [Back to haltaro](https://haltaro.github.io)
 
 # Requirements
 
