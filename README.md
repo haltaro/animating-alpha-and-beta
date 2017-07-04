@@ -1,4 +1,4 @@
-[Qiita記事](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [haltaro](https://haltaro.github.io)
+[日本語（Qiita）](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [haltaro](https://haltaro.github.io)
 
 # Requirements
 
@@ -44,4 +44,4 @@ ab.animate_a_b()
 # License
 MIT
 
-[Qiita記事](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [haltaro](https://haltaro.github.io)
+[日本語（Qiita）](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [haltaro](https://haltaro.github.io)
