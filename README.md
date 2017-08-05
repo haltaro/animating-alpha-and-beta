@@ -44,4 +44,3 @@ ab.animate_a_b()
 # License
 MIT
 
-[日本語（Qiita）](http://qiita.com/haltaro/items/e3e29264079f6b90d6df) | [haltaro](https://haltaro.github.io/projects)
